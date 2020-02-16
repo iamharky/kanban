@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Titillium+Web&display=swap" rel="stylesheet">
+  <title>Kanban App</title>
+</head>
+
+<body>
+  <p>KANBAN APP</p>
+  <form id="adding-form">
+    <input type="text">
+    <button>ADD</button>
+  </form>
+  <div id="titles">
+    <h2 class="title">TODO (<span id="todolen">0</span>)</h2>
+    <h2 class="title">DOING (<span id="doinglen">0</span>)</h2>
+    <h2 class="title">DONE (<span id="donelen">0</span>)</h2>
+  </div>
+  <div id="drop-zones">
+    <div class="drop-zone" dropzone="move" id="todo">
+    </div>
+    <div class="drop-zone" dropzone="move" id="doing">
+    </div>
+    <div class="drop-zone" dropzone="move" id="done">
+    </div>
+  </div>
+  <div class="drop-zone" dropzone="move" id="delete">
+    DELETE
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>

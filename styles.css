@@ -1,0 +1,125 @@
+* {font-family: 'Titillium Web'}
+
+body {background-color: #fbfbfb;}
+
+p {
+  font-family: 'Caveat Brush';
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 30px;
+  color: #0669
+}
+
+#adding-form {
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  height: 40px;
+  font-size: 24px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 0;
+  box-sizing: content-box;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  outline: none;
+  margin-left: -10px
+}
+
+form input:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+form button {
+  height: 36px;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0 6px;
+  border: 3px solid green;
+  box-sizing: content-box;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  outline: none;
+  margin-left: 20px;
+  background-color: green;
+  color: white;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: white;
+  color: green;
+}
+
+#titles, #drop-zones {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {flex: 1}
+
+h2 {
+  text-align: center;
+}
+
+.drop-zone {
+  flex: 0.3;
+  min-height: 30vh;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+#todo {
+  background-color: wheat;
+}
+
+#doing {
+  background-color: pink;
+}
+
+#done {
+  background-color: lightblue;
+}
+
+#delete {
+  background-color: indianred;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 8px;
+  min-height: auto;
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px
+}
+
+.draggable {
+  margin: 8px;
+  max-width: 100%;
+  padding: 8px;
+  display: inline-block;
+  text-align: center;
+  cursor: move;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  word-wrap: normal;
+}
+
+#todo .draggable {
+  background-color: indianred;
+}
+
+#doing .draggable {
+  background-color: yellowgreen;
+}
+
+#done .draggable {
+  background-color: forestgreen;
+}
