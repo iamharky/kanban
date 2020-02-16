@@ -6,8 +6,8 @@ window.onload = () => {
     zone.addEventListener('dragleave', dragLeave)
   })
 
-  getStoredItems(dropZones);
   document.getElementById('adding-form').addEventListener('submit', addItem)
+  getStoredItems(dropZones);
 }
 
 const getStoredItems = dropZones => {
